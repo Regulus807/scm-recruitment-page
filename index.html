@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>字节跳动供应链管理团队招聘</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Noto Sans SC', 'system-ui', 'sans-serif']
+          },
+          colors: {
+            ink: '#1f2937',
+            brand: '#2563eb',
+            brandDeep: '#1d4ed8',
+            mint: '#ecfeff',
+            skysoft: '#eef4ff',
+            warm: '#fff7ed'
+          },
+          boxShadow: {
+            soft: '0 20px 60px rgba(37, 99, 235, 0.12)',
+            card: '0 10px 30px rgba(15, 23, 42, 0.08)'
+          },
+          keyframes: {
+            floaty: {
+              '0%, 100%': { transform: 'translateY(0px)' },
+              '50%': { transform: 'translateY(-8px)' }
+            },
+            fadeUp: {
+              '0%': { opacity: 0, transform: 'translateY(18px)' },
+              '100%': { opacity: 1, transform: 'translateY(0)' }
+            }
+          },
+          animation: {
+            floaty: 'floaty 5s ease-in-out infinite',
+            fadeUp: 'fadeUp 0.7s ease-out both'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Noto Sans SC', system-ui, sans-serif;
+      color: #1f2937;
+      background:
+        radial-gradient(circle at top left, rgba(191, 219, 254, 0.9), transparent 28%),
+        radial-gradient(circle at top right, rgba(224, 242, 254, 0.85), transparent 22%),
+        linear-gradient(180deg, #f8fbff 0%, #ffffff 42%, #f7fbff 100%);
+    }
+    .glass {
+      background: rgba(255, 255, 255, 0.72);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+    }
+    .grid-pattern {
+      background-image:
+        linear-gradient(rgba(37, 99, 235, 0.06) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(37, 99, 235, 0.06) 1px, transparent 1px);
+      background-size: 28px 28px;
+    }
+    .job-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 22px 50px rgba(37, 99, 235, 0.15);
+    }
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      border-radius: 9999px;
+      padding: 8px 14px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+    .icon {
+      font-family: 'Material Symbols Outlined';
+      font-size: 20px;
+      line-height: 1;
+      font-variation-settings: 'FILL' 0, 'wght' 500, 'GRAD' 0, 'opsz' 24;
+    }
+    .timeline-line::before {
+      content: '';
+      position: absolute;
+      left: 12px;
+      top: 14px;
+      bottom: -14px;
+      width: 2px;
+      background: linear-gradient(180deg, rgba(37,99,235,.32), rgba(37,99,235,.08));
+    }
+    .timeline-line:last-child::before { display: none; }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="fixed top-0 left-0 right-0 z-50 glass border-b border-slate-200/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <div class="flex items-center gap-2 font-bold text-xl text-ink">
+          <span class="icon text-brand">inventory</span>
+          <span>供应链管理团队</span>
+        </div>
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="#about" class="text-slate-600 hover:text-brand font-medium transition-colors">关于团队</a>
+          <a href="#benefits" class="text-slate-600 hover:text-brand font-medium transition-colors">成长机会</a>
+          <a href="#jobs" class="text-slate-600 hover:text-brand font-medium transition-colors">热招岗位</a>
+        </div>
+        <div class="flex items-center">
+          <a href="#jobs" class="bg-brand hover:bg-brandDeep text-white px-5 py-2 rounded-lg font-medium transition-all shadow-lg shadow-brand/20 hover:shadow-xl hover:shadow-brand/25">
+            查看岗位
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="pt-32 pb-24 relative overflow-hidden">
+    <div class="absolute inset-0 grid-pattern opacity-40"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      <div class="text-center max-w-4xl mx-auto">
+        <div class="inline-flex items-center gap-2 bg-brand/10 text-brand px-4 py-2 rounded-full font-medium mb-6 animate-fadeUp" style="animation-delay: 0.1s">
+          <span class="icon">rocket_launch</span>
+          行业领先的供应链管理平台
+        </div>
+        <h1 class="text-[clamp(2.5rem,5vw,4rem)] font-black leading-tight text-ink mb-6 animate-fadeUp" style="animation-delay: 0.2s">
+          加入字节跳动<span class="text-brand">供应链管理团队</span>，<br>
+          共建高效协同的供应链价值体系
+        </h1>
+        <p class="text-lg text-slate-600 mb-10 max-w-2xl mx-auto animate-fadeUp" style="animation-delay: 0.3s">
+          我们支撑公司全业务线的供应链需求，对接全球优质供应商，管理大规模采购业务。
+        </p>
+        <div class="flex flex-wrap justify-center gap-4 animate-fadeUp" style="animation-delay: 0.4s">
+          <a href="#jobs" class="bg-brand hover:bg-brandDeep text-white px-8 py-3.5 rounded-xl font-bold text-lg transition-all shadow-xl shadow-brand/25 hover:shadow-2xl hover:shadow-brand/30">
+            立即看岗位
+          </a>
+          <a href="#about" class="bg-white hover:bg-slate-50 text-ink border border-slate-200 px-8 py-3.5 rounded-xl font-bold text-lg transition-all shadow-lg">
+            了解团队方向
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-[clamp(1.8rem,3vw,2.5rem)] font-bold text-ink mb-4">关于我们</h2>
+        <p class="text-slate-600 max-w-2xl mx-auto">字节跳动供应链管理团队是公司核心基础能力团队，支撑全业务线的供应链需求，管理大规模采购业务。</p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <p class="text-lg text-slate-700 leading-relaxed">
+            字节跳动供应链管理团队，是字节跳动数据中心与IoT智能硬件供应链端到端解决方案提供者，集创新与孵化、甄选与协同、整合与增值等功能于一体，承载公司各产品线硬件资源保障的工作。
+          </p>
+        </div>
+        <div class="relative">
+          <div class="absolute -inset-4 bg-gradient-to-br from-brand/20 to-blue-200/20 rounded-3xl blur-xl opacity-60"></div>
+          <div class="relative bg-skysoft rounded-3xl p-10 shadow-soft border border-slate-200/50">
+            <div class="absolute top-0 right-0 -mt-6 -mr-6">
+              <div class="w-20 h-20 bg-white rounded-full shadow-lg flex items-center justify-center animate-floaty">
+                <span class="icon text-brand text-4xl">public</span>
+              </div>
+            </div>
+            <h3 class="text-2xl font-bold mb-6">我们的优势</h3>
+            <ul class="space-y-4">
+              <li class="flex items-start gap-3">
+                <span class="icon text-green-600 mt-0.5">check_circle</span>
+                <span class="text-slate-700">大规模供应链管理项目，接触行业最前沿的供应链技术和管理体系</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="icon text-green-600 mt-0.5">check_circle</span>
+                <span class="text-slate-700">高速发展的业务场景，充足的晋升空间和成长机会，核心岗位HC充足</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="icon text-green-600 mt-0.5">check_circle</span>
+                <span class="text-slate-700">极具竞争力的薪酬体系，包括基本工资、年终奖、股票期权等丰厚回报</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="icon text-green-600 mt-0.5">check_circle</span>
+                <span class="text-slate-700">完善的福利保障：五险一金全额缴纳、带薪年假、免费三餐、下午茶、年度体检、租房补贴等</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="icon text-green-600 mt-0.5">check_circle</span>
+                <span class="text-slate-700">扁平的管理架构，开放的工作氛围，优秀的团队伙伴，简单高效的工作文化</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section id="benefits" class="py-20 bg-skysoft/50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-[clamp(1.8rem,3vw,2.5rem)] font-bold text-ink mb-4">你将获得什么</h2>
+        <p class="text-slate-600 max-w-2xl mx-auto">你将在供应链核心业务实践中获得丰富的成长机会：</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="glass rounded-2xl p-8 shadow-card border border-slate-200/50 hover:shadow-soft transition-all group">
+          <div class="w-12 h-12 bg-brand/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-brand group-hover:text-white transition-all">
+            <span class="icon text-brand text-2xl group-hover:text-white">work</span>
+          </div>
+          <h3 class="text-xl font-bold mb-3">行业实践</h3>
+          <p class="text-slate-600">参与数据中心与智能硬件供应链全链路管理，积累商务拓展、供应商战略合作、资产运营等核心领域的实操经验。</p>
+        </div>
+        <div class="glass rounded-2xl p-8 shadow-card border border-slate-200/50 hover:shadow-soft transition-all group">
+          <div class="w-12 h-12 bg-brand/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-brand group-hover:text-white transition-all">
+            <span class="icon text-brand text-2xl group-hover:text-white">school</span>
+          </div>
+          <h3 class="text-xl font-bold mb-3">能力提升</h3>
+          <p class="text-slate-600">深度参与战略沟通、量价谈判、流程优化、风险管控等关键工作，快速提升专业能力与行业视野。</p>
+        </div>
+        <div class="glass rounded-2xl p-8 shadow-card border border-slate-200/50 hover:shadow-soft transition-all group">
+          <div class="w-12 h-12 bg-brand/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-brand group-hover:text-white transition-all">
+            <span class="icon text-brand text-2xl group-hover:text-white">emoji_events</span>
+          </div>
+          <h3 class="text-xl font-bold mb-3">价值贡献</h3>
+          <p class="text-slate-600">工作成果直接支撑公司各产品线硬件资源保障需求，为业务稳定发展提供重要供应链支持。</p>
+        </div>
+        <div class="glass rounded-2xl p-8 shadow-card border border-slate-200/50 hover:shadow-soft transition-all group">
+          <div class="w-12 h-12 bg-brand/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-brand group-hover:text-white transition-all">
+            <span class="icon text-brand text-2xl group-hover:text-white">trending_up</span>
+          </div>
+          <h3 class="text-xl font-bold mb-3">职业成长</h3>
+          <p class="text-slate-600">在高速发展的业务场景中，获得清晰的成长路径与丰富的跨部门协作经验，实现个人与业务的共同发展。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Jobs Section -->
+  <section id="jobs" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-[clamp(1.8rem,3vw,2.5rem)] font-bold text-ink mb-4">热招岗位</h2>
+        <p class="text-slate-600 max-w-2xl mx-auto">欢迎加入，团队高速发展。</p>
+      </div>
+
+      <div class="space-y-8">
+        <!-- Job 1 -->
+        <div class="job-card glass rounded-2xl p-8 shadow-card border border-slate-200/50 transition-all">
+          <div class="flex flex-wrap justify-between items-start gap-4 mb-6">
+            <div>
+              <div class="flex items-center gap-3 mb-2">
+                <h3 class="text-2xl font-bold">商务拓展经理-硬件核心品类</h3>
+                <span class="chip bg-red-50 text-red-600 border border-red-200">
+                  <span class="icon text-sm">priority_high</span>
+                  急招
+                </span>
+              </div>
+              <div class="flex flex-wrap gap-3 text-sm text-slate-500">
+                <span class="flex items-center gap-1"><span class="icon text-sm">location_on</span> 深圳</span>
+              </div>
+            </div>
+            <a href="https://jobs.bytedance.com/experienced/position/7655346999400892677/detail" target="_blank" class="bg-brand hover:bg-brandDeep text-white px-6 py-3 rounded-lg font-medium transition-all shadow-lg shadow-brand/20">
+              立即投递
+            </a>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div>
+              <h4 class="text-lg font-bold mb-4 flex items-center gap-2">
+                <span class="icon text-brand">assignment</span>
+                岗位职责
+              </h4>
+              <ul class="space-y-3 text-slate-700">
+                <li class="flex items-start gap-2">
+                  <span class="icon text-brand text-sm mt-1">radio_button_unchecked</span>
+                  <span>搭建多层级战略供应商沟通体系，通过月度业务复盘、季度战略对齐、年度高层峰会，持续深化供应商战略合作关系。</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="icon text-brand text-sm mt-1">radio_button_unchecked</span>
+                  <span>以价值共赢为核心，在合规前提下实现信息互通、资源共建、项目共创，构建长期稳定的供应链联盟。</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="icon text-brand text-sm mt-1">radio_button_unchecked</span>
+                  <span>通过长期量价协议、稳定份额提升供应商粘性与资源倾斜度。</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="icon text-brand text-sm mt-1">radio_button_unchecked</span>
+                  <span>深刻理解品类行业行情并产出行业分析报告。</span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="text-lg font-bold mb-4 flex items-center gap-2">
+                <span class="icon text-brand">check_circle</span>
+                任职要求
+              </h4>
+              <ul class="space-y-3 text-slate-700">
+                <li class="flex items-start gap-2">
+                  <span class="icon text-green-600 text-sm mt-1">check</span>
+                  <span>拥有成熟的商务社交技巧，能够与战略供应商搭建良好的协作生态。</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="icon text-green-600 text-sm mt-1">check</span>
+                  <span>精通韩语或者英语。</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="icon text-green-600 text-sm mt-1">check</span>
+                  <span>具备丰富的文档演示能力。</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="icon text-green-600 text-sm mt-1">check</span>
+                  <span>能够快速掌握服务器部件产品的基础知识。</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Job 2 -->
+        <div class="job-card glass rounded-2xl p-8 shadow-card border border-slate-200/50 transition-all">
+          <div class="flex flex-wrap justify-between items-start gap-4 mb-6">
+            <div>
+              <div class="flex items-center gap-3 mb-2">
+                <h3 class="text-2xl font-bold">商务拓展Leader-数据中心与供应链</h3>
+                <span class="chip bg-red-50 text-red-600 border border-red-200">
+                  <span class="icon text-sm">priority_high</span>
+                  急招
+                </span>
+              </div>
+              <div class="flex flex-wrap gap-3 text-sm text-slate-500">
+                <span class="flex items-center gap-1"><span class="icon text-sm">location_on</span> 北京</span>
+              </div>
+            </div>
+            <a href="https://jobs.bytedance.com/experienced/position/7655345687887546629/detail" target="_blank" class="bg-brand hover:bg-brandDeep text-white px-6 py-3 rounded-lg font-medium transition-all shadow-lg shadow-brand/20">
+              立即投递
+            </a>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div>
+              <h4 class="text-lg font-bold mb-4 flex items-center gap-2">
+                <span class="icon text-brand">assignment</span>
+                岗位职责
+              </h4>
+              <ul class="space-y-3 text-slate-700">
+                <li class="flex items-start gap-2">
+                  <span class="icon text-brand text-sm mt-1">radio_button_unchecked</span>
+                  <span>搭建多层级战略供应商沟通体系，通过月度业务复盘、季度战略对齐、年度高层峰会，持续深化供应商战略合作关系。</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="icon text-brand text-sm mt-1">radio_button_unchecked</span>
+                  <span>以价值共赢为核心，在合规前提下实现信息互通、资源共建、项目共创，构建长期稳定的供应链联盟。</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="icon text-brand text-sm mt-1">radio_button_unchecked</span>
+                  <span>通过长期量价协议、稳定份额提升供应商粘性与资源倾斜度。</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="icon text-brand text-sm mt-1">radio_button_unchecked</span>
+                  <span>深刻理解品类行业行情并产出行业分析报告。</span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="text-lg font-bold mb-4 flex items-center gap-2">
+                <span class="icon text-brand">check_circle</span>
+                任职要求
+              </h4>
+              <ul class="space-y-3 text-slate-700">
+                <li class="flex items-start gap-2">
+                  <span class="icon text-green-600 text-sm mt-1">check</span>
+                  <span>拥有成熟的商务社交技巧，能够在正式与非正式场合建立关系。</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="icon text-green-600 text-sm mt-1">check</span>
+                  <span>精通韩语或者英语。</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="icon text-green-600 text-sm mt-1">check</span>
+                  <span>具备丰富的文档演示能力。</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="icon text-green-600 text-sm mt-1">check</span>
+                  <span>能够快速掌握服务器部件产品的基础知识。</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Job 3 -->
+        <div class="job-card glass rounded-2xl p-8 shadow-card border border-slate-200/50 transition-all">
+          <div class="flex flex-wrap justify-between items-start gap-4 mb-6">
+            <div>
+              <div class="flex items-center gap-3 mb-2">
+                <h3 class="text-2xl font-bold">租赁运营专家-服务供应链</h3>
+                <span class="chip bg-red-50 text-red-600 border border-red-200">
+                  <span class="icon text-sm">priority_high</span>
+                  急招
+                </span>
+              </div>
+              <div class="flex flex-wrap gap-3 text-sm text-slate-500">
+                <span class="flex items-center gap-1"><span class="icon text-sm">location_on</span> 北京</span>
+              </div>
+            </div>
+            <a href="https://jobs.bytedance.com/experienced/position/7646375297684506885/detail" target="_blank" class="bg-brand hover:bg-brandDeep text-white px-6 py-3 rounded-lg font-medium transition-all shadow-lg shadow-brand/20">
+              立即投递
+            </a>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div>
+              <h4 class="text-lg font-bold mb-4 flex items-center gap-2">
+                <span class="icon text-brand">assignment</span>
+                岗位职责
+              </h4>
+              <ul class="space-y-3 text-slate-700">
+                <li class="flex items-start gap-2">
+                  <span class="icon text-brand text-sm mt-1">radio_button_unchecked</span>
+                  <span>统筹租赁全链路运营管理，把控订单、验收、结算、退租、回购等关键节点质量与风险，指导初级人员开展日常工作。</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="icon text-brand text-sm mt-1">radio_button_unchecked</span>
+                  <span>深度梳理业务流程与卡点，独立输出流程优化、规则升级方案并推动落地；联动系统开发、产品团队推进系统功能迭代与工具提效。</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="icon text-brand text-sm mt-1">radio_button_unchecked</span>
+                  <span>作为对外接口，深度维护供应商合作关系，开展合作评估、问题协商；牵头制定租赁服务商考核体系、联合内外部团队制定资产盘点方案，组织盘点流程、出具盘点分析报告。</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="icon text-brand text-sm mt-1">radio_button_unchecked</span>
+                  <span>主导各类复杂异常、纠纷问题处理，协调内外部多方资源快速解决问题，总结复盘并形成风险防范机制。</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="icon text-brand text-sm mt-1">radio_button_unchecked</span>
+                  <span>深度开展数据分析，挖掘数据趋势、成本及供应风险，输出分析结论与优化建议，支撑品类商务完成供应商份额规划与管理。</span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="text-lg font-bold mb-4 flex items-center gap-2">
+                <span class="icon text-brand">check_circle</span>
+                任职要求
+              </h4>
+              <ul class="space-y-3 text-slate-700">
+                <li class="flex items-start gap-2">
+                  <span class="icon text-green-600 text-sm mt-1">check</span>
+                  <span>本科及以上学历，5年及以上设备租赁、资产运营、供应链运营工作经验，熟悉租赁全业务链条。</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="icon text-green-600 text-sm mt-1">check</span>
+                  <span>具备流程优化、系统提效、项目推进实操经验，能够独立搭建运营台账、优化作业标准。</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="icon text-green-600 text-sm mt-1">check</span>
+                  <span>具备供应商对接、商务沟通及资产全周期管理经验，可独立处理复杂业务纠纷与异常问题。</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="icon text-green-600 text-sm mt-1">check</span>
+                  <span>具备较强数据敏感度与数据分析能力，能独立制作分析报表、输出业务洞察。</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="icon text-green-600 text-sm mt-1">check</span>
+                  <span>逻辑清晰，统筹协调能力突出，具备一定的工作指导与团队协作能力。</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="icon text-green-600 text-sm mt-1">check</span>
+                  <span>有企业国内或国际设备租赁、IT资产租赁、工程设备租赁经验者优先。</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-20 bg-gradient-to-br from-brand/10 to-blue-100/50">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-[clamp(1.8rem,3vw,2.5rem)] font-bold text-ink mb-6">如果你也想加入供应链管理团队，与我们共同成长</h2>
+      <p class="text-lg text-slate-600 mb-10 max-w-2xl mx-auto">
+        这里有广阔的职业发展平台和丰富的成长机会，我们欢迎优秀人才加入，与我们共同推动供应链体系建设。
+      </p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="#jobs" class="bg-brand hover:bg-brandDeep text-white px-8 py-3.5 rounded-xl font-bold text-lg transition-all shadow-xl shadow-brand/25 hover:shadow-2xl hover:shadow-brand/30">
+          查看全部岗位
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-12 bg-white border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center">
+        <div class="flex items-center justify-center gap-2 font-bold text-xl text-ink mb-4">
+          <span class="icon text-brand">inventory</span>
+          <span>字节跳动供应链管理团队</span>
+        </div>
+        <p class="text-slate-500 text-sm">
+          © 2026 字节跳动供应链管理团队 · 招聘
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
