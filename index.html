@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="zh-CN"><head>  <meta charset="UTF-8">  <meta name="viewport" content="width=device-width, initial-scale=1.0">  <title>字节跳动供应链管理部门招聘</title>  <script src="https://cdn.tailwindcss.com"></script>  <link rel="preconnect" href="https://fonts.googleapis.com">  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800;900&display=swap" rel="stylesheet">  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">  <script>    tailwind.config = {      theme: {        extend: {          fontFamily: {            sans: ['Noto Sans SC', 'system-ui', 'sans-serif']          },          colors: {            ink: '#1f2937',            brand: '#2563eb',            brandDeep: '#1d4ed8',            mint: '#ecfeff',            skysoft: '#eef4ff',            warm: '#fff7ed'          },          boxShadow: {            soft: '0 20px 60px rgba(37, 99, 235, 0.12)',            card: '0 10px 30px rgba(15, 23, 42, 0.08)'          },          keyframes: {            floaty: {              '0%, 100%': { transform: 'translateY(0px)' },              '50%': { transform: 'translateY(-8px)' }            },            fadeUp: {<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
@@ -103,9 +103,9 @@
   <nav class="fixed top-0 left-0 right-0 z-50 glass border-b border-slate-200/60">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between items-center h-16">
-        <div class="flex items-center gap-2 font-medium text-lg text-ink">
+        <div class="flex items-center gap-2 font-medium text-xl text-ink">
           <span class="icon text-brand">inventory</span>
-          <span class="text-base font-medium">字节跳动供应链管理</span>
+          <span>供应链管理部门</span>
         </div>
         <div class="hidden md:flex items-center space-x-8">
           <a href="#about" class="text-slate-600 hover:text-brand font-medium transition-colors">关于团队</a>
@@ -113,7 +113,7 @@
           <a href="#jobs" class="text-slate-600 hover:text-brand font-medium transition-colors">热招岗位</a>
         </div>
         <div class="flex items-center">
-          <a href="#jobs" class="bg-brand hover:bg-brandDeep text-white px-5 py-2 rounded-lg font-medium transition-all shadow-lg shadow-brand/20">
+          <a href="#jobs" class="bg-brand hover:bg-brandDeep text-white px-5 py-2 rounded-lg font-medium transition-all shadow-lg shadow-brand/20 hover:shadow-xl hover:shadow-brand/25">
             查看岗位
           </a>
         </div>
@@ -126,22 +126,18 @@
     <div class="absolute inset-0 grid-pattern opacity-40"></div>
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
       <div class="text-center max-w-4xl mx-auto">
-        <div class="inline-flex items-center gap-2 bg-brand/10 text-brand px-4 py-2 rounded-full font-medium mb-6 animate-fadeUp" style="animation-delay: 0.1s">
-          <span class="icon">rocket_launch</span>
-          AI算力基础设施供应链管理
-        </div>
         <h1 class="text-[clamp(2.5rem,5vw,4rem)] font-bold leading-tight text-ink mb-6 animate-fadeUp" style="animation-delay: 0.2s">
-          欢迎加入字节跳动<br><span class="text-brand">供应链管理部门</span>
+          欢迎加入字节跳动<span class="text-brand">供应链管理部门</span>
         </h1>
-        <p class="text-base text-slate-600 mb-10 max-w-2xl mx-auto animate-fadeUp" style="animation-delay: 0.3s">
+        <p class="text-lg text-slate-600 mb-10 max-w-2xl mx-auto animate-fadeUp" style="animation-delay: 0.3s">
           支撑公司全业务线的供应链需求，对接全球优质供应商，构建深度战略合作关系。
         </p>
         <div class="flex flex-wrap justify-center gap-4 animate-fadeUp" style="animation-delay: 0.4s">
           <a href="#jobs" class="bg-brand hover:bg-brandDeep text-white px-8 py-3.5 rounded-xl font-bold text-lg transition-all shadow-xl shadow-brand/25 hover:shadow-2xl hover:shadow-brand/30">
-            立即看岗位
+            直达岗位
           </a>
           <a href="#about" class="bg-white hover:bg-slate-50 text-ink border border-slate-200 px-8 py-3.5 rounded-xl font-bold text-lg transition-all shadow-lg">
-            了解团队方向
+            了解团队
           </a>
         </div>
       </div>
@@ -153,8 +149,9 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16">
         <h2 class="text-[clamp(1.8rem,3vw,2.5rem)] font-bold text-ink mb-4">关于我们</h2>
-        <p class="text-slate-600 max-w-2xl mx-auto">字节跳动AI算力基础设施供应链部门，覆盖 GPU、CPU、存储芯片及云资源等核心品类的战略采购与供应管理。</p>
+        <p class="text-slate-600 max-w-2xl mx-auto">AI时代支撑字节跳动AI发展的算力基础设施关键部门，负责GPU、CPU、存储、芯片、公有云等核心品类战略采购。</p>
       </div>
+
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div>
           <p class="text-lg text-slate-700 leading-relaxed">
@@ -173,19 +170,15 @@
             <ul class="space-y-4">
               <li class="flex items-start gap-3">
                 <span class="icon text-green-600 mt-0.5">check_circle</span>
-                <span class="text-slate-700">百万量级的大规模算力基础设施服务，接触行业最前沿的核心品类战略合作</span>
+                <span class="text-slate-700"><strong>行业领先：</strong>百万级算力规模的基础设施服务，接触行业最前沿的硬件核心品类战略合作。</span>
               </li>
               <li class="flex items-start gap-3">
                 <span class="icon text-green-600 mt-0.5">check_circle</span>
-                <span class="text-slate-700">高速发展的业务场景，核心岗位HC充足</span>
+                <span class="text-slate-700"><strong>全球化业务布局：</strong>覆盖亚太、欧美等多个国家和地区，参与不同区域的供应链建设与合作，具备全球化的业务视野与资源整合能力。</span>
               </li>
               <li class="flex items-start gap-3">
                 <span class="icon text-green-600 mt-0.5">check_circle</span>
-                <span class="text-slate-700">扁平的管理架构，开放的工作氛围，优秀的团队伙伴，简单高效的工作文化</span>
-              </li>
-              <li class="flex items-start gap-3">
-                <span class="icon text-green-600 mt-0.5">check_circle</span>
-                <span class="text-slate-700">具备行业竞争力的薪酬体系，完善的福利保障</span>
+                <span class="text-slate-700"><strong>业务高速增长：</strong>AI算力需求爆发式增长，部门处于高速扩张阶段。</span>
               </li>
             </ul>
           </div>
@@ -193,6 +186,7 @@
       </div>
     </div>
   </section>
+
   <!-- Benefits Section -->
   <section id="benefits" class="py-20 bg-skysoft/50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -249,7 +243,10 @@
             <div>
               <div class="flex items-center gap-3 mb-2">
                 <h3 class="text-2xl font-bold">商务拓展经理-硬件核心品类</h3>
-                <span class="chip bg-red-50 text-red-600 border border-red-200">HOT</span>
+                <span class="chip bg-red-50 text-red-600 border border-red-200">
+                  <span class="icon text-sm">priority_high</span>
+                  HOT
+                </span>
               </div>
               <div class="flex flex-wrap gap-3 text-sm text-slate-500">
                 <span class="flex items-center gap-1"><span class="icon text-sm">location_on</span> 深圳</span>
@@ -318,7 +315,10 @@
             <div>
               <div class="flex items-center gap-3 mb-2">
                 <h3 class="text-2xl font-bold">商务拓展经理-硬件核心品类</h3>
-                <span class="chip bg-red-50 text-red-600 border border-red-200">HOT</span>
+                <span class="chip bg-red-50 text-red-600 border border-red-200">
+                  <span class="icon text-sm">priority_high</span>
+                  HOT
+                </span>
               </div>
               <div class="flex flex-wrap gap-3 text-sm text-slate-500">
                 <span class="flex items-center gap-1"><span class="icon text-sm">location_on</span> 北京</span>
@@ -381,86 +381,7 @@
           </div>
         </div>
 
-        <!-- Job 3 -->
-        <div class="job-card glass rounded-2xl p-8 shadow-card border border-slate-200/50 transition-all">
-          <div class="flex flex-wrap justify-between items-start gap-4 mb-6">
-            <div>
-              <div class="flex items-center gap-3 mb-2">
-                <h3 class="text-2xl font-bold">租赁运营专家-服务供应链</h3>
-                <span class="chip bg-red-50 text-red-600 border border-red-200">HOT</span>
-              </div>
-              <div class="flex flex-wrap gap-3 text-sm text-slate-500">
-                <span class="flex items-center gap-1"><span class="icon text-sm">location_on</span> 北京</span>
-              </div>
-            </div>
-            <a href="https://jobs.bytedance.com/experienced/position/7646375297684506885/detail" target="_blank" class="bg-brand hover:bg-brandDeep text-white px-6 py-3 rounded-lg font-medium transition-all shadow-lg shadow-brand/20">
-              立即投递
-            </a>
-          </div>
 
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div>
-              <h4 class="text-lg font-bold mb-4 flex items-center gap-2">
-                <span class="icon text-brand">assignment</span>
-                岗位职责
-              </h4>
-              <ul class="space-y-3 text-slate-700">
-                <li class="flex items-start gap-2">
-                  <span class="icon text-brand text-sm mt-1">radio_button_unchecked</span>
-                  <span>统筹租赁全链路运营管理，把控订单、验收、结算、退租、回购等关键节点质量与风险，指导初级人员开展日常工作。</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <span class="icon text-brand text-sm mt-1">radio_button_unchecked</span>
-                  <span>深度梳理业务流程与卡点，独立输出流程优化、规则升级方案并推动落地；联动系统开发、产品团队推进系统功能迭代与工具提效。</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <span class="icon text-brand text-sm mt-1">radio_button_unchecked</span>
-                  <span>作为对外接口，深度维护供应商合作关系，开展合作评估、问题协商；牵头制定租赁服务商考核体系、联合内外部团队制定资产盘点方案，组织盘点流程、出具盘点分析报告。</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <span class="icon text-brand text-sm mt-1">radio_button_unchecked</span>
-                  <span>主导各类复杂异常、纠纷问题处理，协调内外部多方资源快速解决问题，总结复盘并形成风险防范机制。</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <span class="icon text-brand text-sm mt-1">radio_button_unchecked</span>
-                  <span>深度开展数据分析，挖掘数据趋势、成本及供应风险，输出分析结论与优化建议，支撑品类商务完成供应商份额规划与管理。</span>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h4 class="text-lg font-bold mb-4 flex items-center gap-2">
-                <span class="icon text-brand">check_circle</span>
-                任职要求
-              </h4>
-              <ul class="space-y-3 text-slate-700">
-                <li class="flex items-start gap-2">
-                  <span class="icon text-green-600 text-sm mt-1">check</span>
-                  <span>本科及以上学历，5年及以上设备租赁、资产运营、供应链运营工作经验，熟悉租赁全业务链条。</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <span class="icon text-green-600 text-sm mt-1">check</span>
-                  <span>具备流程优化、系统提效、项目推进实操经验，能够独立搭建运营台账、优化作业标准。</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <span class="icon text-green-600 text-sm mt-1">check</span>
-                  <span>具备供应商对接、商务沟通及资产全周期管理经验，可独立处理复杂业务纠纷与异常问题。</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <span class="icon text-green-600 text-sm mt-1">check</span>
-                  <span>具备较强数据敏感度与数据分析能力，能独立制作分析报表、输出业务洞察。</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <span class="icon text-green-600 text-sm mt-1">check</span>
-                  <span>逻辑清晰，统筹协调能力突出，具备一定的工作指导与团队协作能力。</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <span class="icon text-green-600 text-sm mt-1">check</span>
-                  <span>有企业国内或国际设备租赁、IT资产租赁、工程设备租赁经验者优先。</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   </section>
@@ -468,9 +389,9 @@
   <!-- CTA Section -->
   <section class="py-20 bg-gradient-to-br from-brand/10 to-blue-100/50">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <h2 class="text-[clamp(1.8rem,3vw,2.5rem)] font-bold text-ink mb-6">期待你的加入</h2>
+      <h2 class="text-[clamp(1.8rem,3vw,2.5rem)] font-bold text-ink mb-6">供应链管理部门期待你的加入</h2>
       <p class="text-lg text-slate-600 mb-10 max-w-2xl mx-auto">
-        与顶尖人才同行，共建AI时代核心供应链战略生态
+        与我们共同推动AI发展与全球战略供应链建设，期待优秀的你
       </p>
       <div class="flex flex-wrap justify-center gap-4">
         <a href="#jobs" class="bg-brand hover:bg-brandDeep text-white px-8 py-3.5 rounded-xl font-bold text-lg transition-all shadow-xl shadow-brand/25 hover:shadow-2xl hover:shadow-brand/30">
@@ -486,7 +407,7 @@
       <div class="text-center">
         <div class="flex items-center justify-center gap-2 font-medium text-xl text-ink mb-4">
           <span class="icon text-brand">inventory</span>
-          <span>字节跳动供应链管理</span>
+          <span>字节跳动供应链管理部门</span>
         </div>
         <p class="text-slate-500 text-sm">
           © 2026 字节跳动供应链管理部门 · 招聘
